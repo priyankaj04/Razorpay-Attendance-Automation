@@ -24,12 +24,12 @@ try:
     email_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "email"))  # Update the locator if necessary
     )
-    email_field.send_keys('priyanka@circlehealth.in') # Enter your email here
+    email_field.send_keys('your-email@gmail.com') # Enter your email here
 
     password_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.ID, "password"))  # Update the locator if necessary
     )
-    password_field.send_keys('Priyankaj200212*') # Enter your password here
+    password_field.send_keys('your-password') # Enter your password here
     password_field.send_keys(Keys.RETURN)
     
     login_button = WebDriverWait(driver, 10).until(
